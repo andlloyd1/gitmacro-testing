@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings>
+        <Position x="366" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Text Box (41)">https://api.github.com/</Value>
+          <Value name="Text Box (43)">andlloyd1</Value>
+          <Value name="Text Box (44)">workflowintegrations</Value>
+          <Value name="Text Box (118)">44C00A7225709905F567C68DBE1095CDB6FA8A0C803B8A546B79131ED73366B58BD62B09D8D72C2CB3F1696A920ABAE1A88A5ACBD59BA4BA76E766B6DF252D07FFD790FBCAC42CE68AA3A0378310EE8EEE47345468AF321D2BADBF63CD9E281703A5A692A7C74189439A738ADDF1E6111436AC29124D586DC1560B3C725108BB3800F6137E711349A361A4EA3004021BCA51F47D67D64E9A25EE032A786808A1353CA7DC52D39EF82EA07F872C5B257C8EDF347DA527ECE201D6AE48FCCD0B82168A97CE352A0D39513F76DA75F43A32F0DE62000F4D7F299971DAF26C2060AEA9CDD33EA190162B6D266CF0AF42E9ED7CDB79665189CD6B16DF127AA3C19D7DFA4FF3F7C84ABE9ECB58E59D18F21212DEEB8EF89B11659E393796FF37B5C16720ED1D1064FCEC901022DAF57D4CDD72AE17F91327B884E73A4612B8F7ACFECD4B875BA663B6CC5B1A4BD35744826C6A180EE5D2EC1542D89ACF012009D2EF843ED020486E44A0D7FE83C6B41DEC8051E0FC03A9122279678D931FDA75BFC638CB53EE91FAC7A09758A6F5ABA6CE13FC3E9FC0D1E988907B59C451E7F070ECD91D584221ED2752B35E1DC738DBD064ED30C83533F8379F601169A82D7092E8B1FC153DB4AAFAC9994F4613394FE2DAB0450D4DBB264688E6A68C48E161F4AE312364394B8D469CE99533D221A6206C80D4C8ACD3CC2D57836544249610520A14DF0876A6B590E72E68A8A7962455F02C66CC66458B73544BF3FFA5D00BFF58DDBF088385CBA55D0F24B4F50E6AE276F552E01B75C4DC50DE33B80300BD1D5E9E6B66BFD01F313B9709691106D75CD2A4816DC888078CFC3C2C00F1D000542CA1F9F95D57F9DC376886E27E9335FAC810F60B1F244D480D2C76C2635A8C9330D0012BCB8861F82A4F1474997DF4843B282E63D7F5DF9AC3F950EC6884C03C20493289A5DEAAE04F559C562D435A1D1B7F223C3A08ECA2F982AA1BC616EA004E266FF16A7FAA2B23C577DE057329155D999C77E88D81FE36653FC5D03FC31DFF471114832E34897CC0B5E5ABE828104222C6540E5E876258823D7766FB4E024</Value>
+          <Value name="Text Box (120)">main</Value>
+          <Value name="Check Box (123)">False</Value>
+          <Value name="Text Box (219)" />
+          <Value name="Input.Input"><![CDATA[file path=FilePath
+target path=TargetPath
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output254">
+          <RecordInfo>
+            <Field name="ref" size="2048" source="CrossTab:Header:JSON_Name:ref:Concat:" type="V_WString" />
+            <Field name="url" size="2048" source="CrossTab:Header:JSON_Name:url:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="GitCommit_AL.yxmc" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="222" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="FilePath" />
+            <Field name="TargetPath" />
+          </Fields>
+          <Data>
+            <r>
+              <c>C:\Users\jarrod.thuener\Downloads\GitCommit_AL.yxmc</c>
+              <c>C:\Users\jarrod.thuener\Downloads\GitCommit_AL.yxmc</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="FilePath" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="TargetPath" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>GitTrial_01_JT</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a394bddc-c720-4763-b610-65870ffe425c" />
+      <Telemetry>
+        <PreviousWorkflowId value="61d7adbf-026e-4b66-add3-5f6656ec8afe" />
+        <OriginWorkflowId value="61d7adbf-026e-4b66-add3-5f6656ec8afe" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
