@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="7">
+      <GuiSettings>
+        <Position x="234" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Disable">False</Value>
+          <Value name="BatchCommit">False</Value>
+          <Value name="FilePath" />
+          <Value name="TargetPath" />
+          <Value name="SelfCommit">True</Value>
+          <Value name="TargetDirectory">testing</Value>
+          <Value name="RepoOwner">andlloyd1</Value>
+          <Value name="GitHubRepo">gitmacro-testing</Value>
+          <Value name="Branch">main</Value>
+          <Value name="Protected">False</Value>
+          <Value name="CommitMessage">Commit message here</Value>
+          <Value name="BaseAddress">https://api.github.com/</Value>
+          <Value name="AccessToken">44EB36A5A031A587F9C0BD70762C941DA1BE7CF68F405DBB0C9544EA0EC924EF11FA090DE469716DCF6D2308FB1B7172BC628FB889CA1D61785D67648DFA829E9EDFFBFCE13B6220C3BD2FF91AEC1114A3B0C4F90A6B28E22E002BDAFDD34A9986ECA6CE17F61951A323AA7B19F372B80A865B9CF1E688F2DD6546E600122B60D5EA529E0E01E3E2A11B4DA9A92F5F37940054E39799584A67AE0C3EB495B5D13D2182F8D76C807CC63F62EDEA9A1A06AE5EB3218292E3B9389F107EC7DEA130E173C94F8A1F053EFF38C6F1C955395788598C75211A72E2E46922D03F532B3408B1C879267D1B3A04B2DAFCBFCA0E55DE8F79C2AEBC2BF0D2EE52D909F651EBD681212986589B1A24ABC42917FCBC12AB7A90FE971B606A23489C58859F65AC9A94EB267168EA25CF5129547B7BB6CA532FD72B78A7B1A151FD3A18F6D2CF19D9135FDAF186FA3529639F921CF7288D5B27903AEE365</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>GitHubCommit (6)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Workflow Integrations\Enterprise Utilities\Git Integration\Final\Combined\GitHubCommit.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections />
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="f88c435c-45c2-4a3b-9e07-d052c122237f" />
+      <Telemetry>
+        <PreviousWorkflowId value="8692d364-5137-4bab-ac3b-f7c0c855f8bc" />
+        <OriginWorkflowId value="8692d364-5137-4bab-ac3b-f7c0c855f8bc" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
